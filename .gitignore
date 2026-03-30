@@ -1,0 +1,50 @@
+# Ambiente virtual
+venv/
+env/
+.venv/
+erp_oficina/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# Distribuição / empacotamento
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Testes e cobertura
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Arquivos estáticos coletados
+staticfiles/
+static_root/
