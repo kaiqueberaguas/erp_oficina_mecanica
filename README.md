@@ -21,7 +21,7 @@ Sistema de gerenciamento para oficinas mecânicas desenvolvido com Django. Proje
 ```bat
 # 1. Clone o repositório
 git clone <url-do-repositorio>
-cd erp_oficina_project
+cd erp_oficina_mecanica #corrigido o nome do arquivo (any maciel)
 
 # 2. Crie o ambiente virtual
 python -m venv venv
