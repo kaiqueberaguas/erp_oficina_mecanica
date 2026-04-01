@@ -53,7 +53,7 @@ Acesse: http://127.0.0.1:8000
 ```bash
 # 1. Clone o repositório
 git clone <url-do-repositorio>
-cd erp_oficina_project
+cd erp_oficina_mecanica
 
 # 2. Crie o ambiente virtual
 python3 -m venv venv
@@ -80,7 +80,7 @@ Acesse: http://127.0.0.1:8000
 
 ### VS Code
 
-1. Abra a pasta do projeto: **File → Open Folder** → selecione `erp_oficina_project/`
+1. Abra a pasta do projeto: **File → Open Folder** → selecione `erp_oficina_mecanica/`
 
 2. Instale as extensões recomendadas:
    - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
@@ -136,7 +136,7 @@ Após criar o superusuário, acesse: http://127.0.0.1:8000/admin
 ## Estrutura do Projeto
 
 ```
-erp_oficina_project/
+erp_oficina_mecanica/
 ├── configuracoes/       # Settings e URLs do Django
 ├── fluxo_oficina/       # App principal (Clientes, Veículos, OS)
 │   └── tests.py         # Testes unitários e de integração
