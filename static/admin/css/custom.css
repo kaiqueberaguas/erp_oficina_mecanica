@@ -1,0 +1,188 @@
+/* BASE */
+
+body {
+    background-color: #3A3A3C;
+    color: #FFFFFF;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+/* HEADER */
+
+#header {
+    background-color: #48484A;
+    min-height: 30px;
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #FF9F0A;
+}
+
+#header h1 a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#user-tools {
+    color: #E5E5E5;
+}
+
+/* BREADCRUMBS */
+
+.breadcrumbs {
+    background-color: #48484A !important;
+    color: #FFFFFF !important;
+    border-bottom: 2px solid #FF9F0A;
+}
+
+.breadcrumbs a {
+    color: #FFFFFF !important;
+}
+
+.breadcrumbs a:hover {
+    color: #FF9F0A !important;
+}
+
+/* SIDEBAR */
+
+#nav-sidebar {
+    background-color: #3A3A3C;
+    border-right: 1px solid #48484A;
+}
+
+/* Cabeçalhos da sidebar */
+#nav-sidebar .module h2 {
+    background-color: #48484A;
+    color: #FFFFFF;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* Links */
+#nav-sidebar a {
+    color: #E5E5E5;
+}
+
+/* Hover */
+#nav-sidebar a:hover {
+    background-color: #48484A !important;
+    color: #FFFFFF !important;
+    border-left: 4px solid #FF9F0A;
+}
+
+/* ITEM SELECIONADO (remove azul do Django) */
+#nav-sidebar .current-model,
+#nav-sidebar .current-app {
+    background-color: #004d4d !important;
+}
+
+/* Texto do item selecionado */
+#nav-sidebar .current-model a,
+#nav-sidebar .current-app a {
+    color: #FFFFFF !important;
+}
+
+
+/* LINKS */
+
+a,
+a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #FF9F0A;
+}
+
+/* TABELAS */
+
+.results table {
+    background-color: #48484A;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results thead th {
+    background-color: #48484A;
+    color: #FFFFFF;
+    font-weight: 600;
+    border-bottom: 2px solid #FF9F0A;
+}
+
+.results tbody td {
+    color: #E5E5E5;
+    border-bottom: 1px solid #3A3A3C;
+}
+
+.results tbody tr:hover {
+    background-color: #3A3A3C;
+}
+
+/* FORMULÁRIOS */
+
+fieldset.module {
+    background-color: #48484A;
+    border-radius: 8px;
+    padding: 22px;
+    border: none;
+}
+
+label {
+    color: #E5E5E5;
+}
+
+input,
+select,
+textarea {
+    background-color: #3A3A3C;
+    border: 1px solid #48484A;
+    color: #FFFFFF;
+    border-radius: 6px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #FF9F0A;
+}
+
+/* BOTÕES */
+
+.button,
+input[type=submit],
+.submit-row input {
+    background-color: #FF9F0A !important;
+    color: #000000 !important;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-weight: 600;
+}
+
+.button:hover,
+input[type=submit]:hover {
+    background-color: #e88f07 !important;
+}
+
+/* MÓDULOS */
+
+.module caption,
+.dashboard .module h2 {
+    background-color: #48484A !important;
+    color: #FFFFFF !important;
+    border-bottom: 2px solid #FF9F0A;
+}
+
+.dashboard .module {
+    background-color: #48484A;
+}
+
+/* MENSAGENS */
+
+.messagelist .success,
+.messagelist .info,
+.messagelist .error {
+    background-color: #48484A;
+    color: #FFFFFF;
+    border-left: 5px solid #FF9F0A;
+}

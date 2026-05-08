@@ -1,0 +1,21 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{# 1️⃣ CSS padrão do admin #}
+{% block extrastyle %}
+    {{ block.super }}
+{% endblock %}
+
+{# 2️⃣ FORÇAR nosso CSS a entrar por último #}
+{% block extrahead %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'admin/css/custom.css' %}?v=3">
+{% endblock %}
+
+{% block branding %}
+<div id="site-name" style="display:flex;align-items:center;gap:14px;">
+    <img src="{% static 'admin/img/logo_oficina.png' %}"
+         alt="Logo"
+         style="height:50px;">
+</div>
+{% endblock %}
