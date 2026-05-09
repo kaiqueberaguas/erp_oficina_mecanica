@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Cliente, Carro
+from .models import Cliente, Carro, OrdemServico
 
 @admin.register(Cliente)
 class ClienteAdmin(admin.ModelAdmin):
@@ -8,7 +8,15 @@ class ClienteAdmin(admin.ModelAdmin):
 
 @admin.register(Carro)
 class CarroAdmin(admin.ModelAdmin):
-    list_display = ('marca', 'modelo', 'placa', 'cliente')
-    search_fields = ('marca', 'modelo', 'placa')
-    list_filter = ('marca', 'modelo', 'cliente')
+    list_display = ('placa', 'modelo', 'cliente')
+    search_fields = ('placa', 'cliente__nome')
 
+@admin.register(OrdemServico)
+class OrdemServicoAdmin(admin.ModelAdmin):
+    list_display = ('pk', 'carro', 'get_cliente', 'status', 'valor_servico', 'data_entrada_carro')
+    search_fields = ('carro__placa', 'carro__cliente__nome')
+    list_filter = ('status',)
+
+    @admin.display(description='Cliente')
+    def get_cliente(self, obj):
+        return obj.carro.cliente
