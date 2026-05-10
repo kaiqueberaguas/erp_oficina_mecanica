@@ -115,6 +115,22 @@ Depois pressione `F5` para iniciar o servidor com o debugger.
 
 ---
 
+## Dados de Demonstração
+
+O projeto inclui um comando para popular o banco com massa de dados realista para demonstração: 10 clientes, 15 veículos e 24 ordens de serviço (finalizadas, abertas e canceladas).
+
+```bash
+# Inserir dados de demo (mantém registros existentes)
+python manage.py populate_demo
+
+# Limpar todos os dados e reinserir do zero
+python manage.py populate_demo --clear
+```
+
+> O comando é idempotente: executá-lo novamente sem `--clear` não duplica registros.
+
+---
+
 ## Executando os Testes
 
 ```bash
